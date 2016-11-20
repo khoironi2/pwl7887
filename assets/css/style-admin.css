@@ -9,7 +9,7 @@ body {
 }
 a, a:visited {
 	text-decoration: none;
-	color:#F00;
+	color: #1ab2ff;
 	font-weight:bold;
 }
 .abu, a.abu {
@@ -63,7 +63,7 @@ table.dasbor {
 	text-decoration: none;
 }
 .dasbor h1 a:hover {
-	color: #F00;
+	color: #f2f2f2;
 }
 /*login*/
 #login {
@@ -75,7 +75,7 @@ table.dasbor {
 	min-width: 240px;
 }
 #login h1 {
-	background-color:#099;
+	background-color:#66ccff;
 	color:#FFF;
 	margin-top: 0;
 	border-radius: 10px 10px 0 0;
@@ -110,7 +110,7 @@ th.kiri, tr.kiri th {
 #login input[type='submit'], #login input[type='reset'],
 .myform input[type='submit'], .myform input[type='reset'],
 a.tambah, a:visited.tambah {
-	background-color: #066;
+	background-color: #66ccff;
 	color:#fff;
 	padding: 10px 20px;
 	border:none;
@@ -123,15 +123,15 @@ a.tambah, a:visited.tambah {
 	display: inline-block;
 }
 #login input[type='submit']:hover, #login input[type='reset']:hover,
-.myform input[type='submit']:hover, .myform input[type='reset']:hover,
+.myform input[type='submit']:hover, .my#66ccffform input[type='reset']:hover,
 a.tambah, a:hover.tambah {
 	background-color:#000;
 }
 #login form a,#login form a:visited {
-	color:#f30;
+	color:black;
 }
 #login form a:hover {
-	color:#900;
+	color:#66ccff;
 }
 .myform th, .myform td {
 	text-align:left;
@@ -142,7 +142,7 @@ a.tambah, a:hover.tambah {
 .myform th {
 	background-color:#F5F5F5;
 	font-weight:bold;
-	color:#099;
+	color:#66ccff;
 	vertical-align: middle;
 }
 .abu {
@@ -188,7 +188,7 @@ header {
 	padding:10px 20px;
 }
 header .akun{
-	background-color:#099;
+	background-color:#66ccff;
 	color:#fff;
 	padding: 10px 20px;
 	border-radius:5px;
@@ -196,7 +196,7 @@ header .akun{
 	margin-right: 20px;
 }
 header .home{
-	background-color:#099;
+	background-color:#66ccff;
 	color:#FFF;
 	padding: 10px 20px;
 	border-radius:5px;
@@ -208,11 +208,11 @@ header a, header a:visited{
 	font-weight: bold;
 }
 header a:hover{
-	color:#CF0;
+	color:#f2f2f2;
 }
 /*nav*/
 nav {
-	background-color:#099;
+	background-color:#66ccff;
 	color:#fff;
 	height: 50px;
 	padding:0 10px;
@@ -225,7 +225,7 @@ nav {
 	padding:10px 20px;
 }
 .konten h1 {
-	color:#099;
+	color:#66ccff;
 	border-bottom: solid thin #EEE;
 	font-size: 18px;
 }
@@ -266,15 +266,15 @@ table.dasbor {
 }
 /*footer*/
 footer {
-	background-color: #099;
-	color: #CCC;
+	background-color: #66ccff;
+	color: white;
 	padding: 10px 20px;
 	text-align: center;
 	font-size: 11px;
 	border-radius: 0 0 10px 10px;
 }
 footer a, footer a:visited{
-	color: #FFF;
+	color: white;
 }
 footer a: hover {
 	color:#CF0;

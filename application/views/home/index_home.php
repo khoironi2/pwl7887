@@ -1,29 +1,127 @@
+<script type="text/javascript"> 
+      $(document).ready(function(){
+	  		// untuk permulaan, tampilkan content nomor 1 '#slideAwal'
+	  		bukaContent($('#slideAwal'),'div1');	
+				
+	    });
+	  </script>	
+	  
+      <a href="javascript:;" onClick="bukaContent(this,'div1')" id="slideAwal">.</a>
+      <a href="javascript:;" onClick="bukaContent(this,'div2')">.</a>
+      <a href="javascript:;" onClick="bukaContent(this,'div3')">.</a>
+      <a href="javascript:;" onClick="bukaContent(this,'div4')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div5')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div6')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div7')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div8')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div9')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div10')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div11')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div12')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div13')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div14')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div15')">.</a>
+	  <a href="javascript:;" onClick="bukaContent(this,'div16')">.</a>
+   
 <div class="konten">
      <div class="slider">
 	 
-	 <div><img src="<?php echo base_url(); ?>assets/images/amzah.jpg" width="925" height="525"></div>
-	 
-	 
+	 <div id="divContent">
+      <div id="div1">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" /> 
+
+      </div>
+      <div id="div2">
+ 	    
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div3">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div4">
+ 	  
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" />
+
+      </div>
+	  <div id="div5">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div6">
+ 	    
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" /> 
+
+      </div>
+      <div id="div7">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div8">
+ 	  
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" />
+
+      </div>
+	  <div id="div9">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div10">
+ 	    
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" /> 
+
+      </div>
+      <div id="div11">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div12">
+ 	  
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" />
+
+      </div>
+	  <div id="div13">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div14">
+ 	    
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" /> 
+
+      </div>
+      <div id="div15">
+ 	     
+ 	     <img src="<?php echo base_url(); ?>assets/images/amzah.jpg" align="left" /> 
+
+      </div>
+      <div id="div16">
+ 	  
+ 	     <img src="<?php echo base_url(); ?>assets/images/shila.jpg" align="left" />
+
+      </div>
+	 </div>
 	 </div>
         <div class="anggota">
-          <h3>Login Administrator</h3>
-          <?php echo validation_errors(); ?> 
-          <form name="form2" method="POST" action="<?php echo base_url(); ?>admin/login/validasi">
-            <p>
-              <label for="username">Username</label>
-              <input type="text" name="username" id="username" placeholder="Username" required autofocus>
-            </p>
-            <p>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" placeholder="Password" required autofocus>
-            </p>
-            <p>
-              <input type="submit" name="submit2" id="submit2" value="Masuk">
-              <input type="reset" name="submit3" id="submit3" value="Reset">
-            </p>
-            <!--<p><a href="login.php?ref=lupa">Lupa password?</a> | <a href="daftar.php">Daftar jadi anggota</a></p>-->
-          </form>
-      </div>    
+       <h3>Berita terbaru</h3>
+       
+       <ul>
+        <?php foreach($artikel as $list) { ?>
+        <li><a href="<?php echo base_url() ?>home/read/<?php echo $list['slug']; ?>"><?php echo $list['judul']; ?></a></li>
+        <?php } ?>
+      </ul>
+ 
+      <p>&nbsp;</p>
+        <p>
+        </p>
+              </div>
 </div>
     <!-- konten bawah -->
   <div class="clearfix"></div>
@@ -39,17 +137,9 @@
         <?php } ?>
  
       </div>
-      <div class="anggota">
-       <h3>Berita terbaru</h3>
-       
-       <ul>
-        <?php foreach($artikel as $list) { ?>
-        <li><a href="<?php echo base_url() ?>home/read/<?php echo $list['slug']; ?>"><?php echo $list['judul']; ?></a></li>
-        <?php } ?>
-      </ul>
- 
-      <p>&nbsp;</p>
-        <p>
-        </p>
-              </div>
+	  <div class="anggota">
+	  <h3>Fokus</h3>
+	  <img src="<?php echo base_url(); ?>assets/images/shila.jpg" width="350" height="250">
+	  </div>
+      
 </div> <!-- END KONTEN BAWAH -->
