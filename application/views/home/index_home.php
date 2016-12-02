@@ -111,9 +111,9 @@
 	 </div>
         <div class="anggota">
        <h3>Berita terbaru</h3>
-       
+       <!-- tampilkan list update terbaru  --->
        <ul>
-        <?php foreach($artikel as $list) { ?>
+        <?php foreach($artikel as $list) { ?> <!---menampilkan semua isi dari artikel -->
         <li><a href="<?php echo base_url() ?>home/read/<?php echo $list['slug']; ?>"><?php echo $list['judul']; ?></a></li>
         <?php } ?>
       </ul>
