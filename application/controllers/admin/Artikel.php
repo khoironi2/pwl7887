@@ -57,7 +57,7 @@ class Artikel extends CI_Controller {
  'isi' => 'admin/artikel/edit_artikel'
  );
  $this->load->view('admin/layout/wrapper', $data);
- // Jika tidak terjadi error maka artikel akan diupdate
+ // fungsi untuk mrnampilkan Jika tidak terjadi error maka artikel akan diupdate
  }else{
  $slug = url_title($this->input->post('judul'), 'dash', TRUE);
  $data = array (
